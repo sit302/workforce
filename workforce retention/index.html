@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>workforce retention</title>
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Raleway:600,700,400,300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
+<link rel="stylesheet" href="css/magnific-popup.css">
+<link rel="stylesheet" href="css/slider-pro.css">
+<link rel="stylesheet" href="css/owl.carousel.css">
+<link rel="stylesheet" href="css/owl.theme.css">
+<link rel="stylesheet" href="css/owl.transitions.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/responsive.css" />
+<link rel="stylesheet" href="css/color-green.css" id="colors" />
+<script src="https://cdn.staticfile.org/angular.js/1.4.6/angular.min.js"></script>
+</head>
+<body ng-app="myapp">
+<!-- preload -->
+<div class="preloader">
+	<div class="status"></div>
+</div>
+<header>
+	<!-- Navigation Menu start-->
+	<nav class="navbar clean-main-menu" role="navigation">
+		<div class="container">
+
+			<!-- Navbar Toggle -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+				<!-- Logo -->
+				<a class="navbar-brand" href="index.html"><img class="logo" id="logo" src="images/logo.png" alt="Page" style="width: 100%;height:50%"></a>
+
+			</div>
+			<!-- Navbar Toggle End -->
+
+			<!-- navbar-collapse start-->
+			<div id="nav-menu" class="navbar-collapse collapse" role="navigation" ng-controller="TitleController">
+				<ul class="nav navbar-nav clean-menu-wrapper">
+					<li class="active">
+						<a href="#home">{{helloTo.title1}}</a>
+					</li>
+
+					<li>
+						<a href="#introduce">{{helloTo.title2}}</a>
+					</li>
+
+					<li>
+						<a href="#online">{{helloTo.title3}}</a>
+					</li>
+
+					<li>
+						<a href="#phone">{{helloTo.title4}}</a>
+					</li>
+
+					<li>
+						<a href="#internal">{{helloTo.title5}}</a>
+					</li>
+
+					<li>
+						<a href="#contact">{{helloTo.title6}}</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</header>
+
+
+<!-- ===================================
+	MAIN SLIDER
+==================================== -->
+<section class="slider-pro clean-slider" id="home">
+	<div class="sp-slides" >
+		<img class="sp-image" src="images/slider/2.jpg" style="width:100%;"/>
+		<!-- Slides -->
+		<!-- <div class="sp-slide clean-main-slides">
+			<div class="clean-img-overlay"></div>
+
+			<img class="sp-image" src="images/slider/1.jpg" alt="Slider 1"/>
+
+			<h1 class="sp-layer clean-slider-text-big"
+			data-position="center" data-show-transition="right" data-hide-transition="right" data-show-delay="1500" data-hide-delay="200">
+			<span class="clean-color-contras">CLEAN</span> - Slider Responsive HTML Template
+			</h1>
+			<p class="sp-layer"
+			data-position="center" data-vertical="15%" data-show-delay="2000" data-hide-delay="200" data-show-transition="left" data-hide-transition="down">
+			   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+			</p>
+
+		</div> -->
+		<!-- Slides End -->
+
+		<!-- Slides -->
+		<!-- <div class="sp-slide clean-main-slides">
+		<div class="clean-img-overlay"></div>
+			<img class="sp-image" src="images/slider/2.jpg" alt="Slider 2"/>
+
+			<h1 class="sp-layer clean-slider-text-big"
+			 data-position="center" data-show-transition="right" data-hide-transition="right" data-show-delay="1500" data-hide-delay="200">
+				<span class="clean-color-contras">CLEAN</span> - Slider Responsive HTML Template
+			</h1>
+
+			<p class="sp-layer"
+			 data-position="center" data-vertical="15%" data-show-delay="2000" data-hide-delay="200" data-show-transition="left" data-hide-transition="down">
+				Lorem ipsum dolor sit amet, consectetur adipisicing.
+			</p>
+		</div> -->
+		<!-- Slides End -->
+
+		<!-- Slides -->
+		<!-- <div class="sp-slide clean-main-slides">
+			<div class="clean-img-overlay"></div>
+
+			<img class="sp-image" src="images/slider/3.jpg" alt="Slider 3"/>
+
+			<h1 class="sp-layer clean-slider-text-big"
+			data-position="center" data-show-transition="right" data-hide-transition="right" data-show-delay="1500" data-hide-delay="200">
+			 <span class="clean-color-contras">CLEAN</span> - Slider Responsive HTML Template
+			</h1>
+
+			<p class="sp-layer"
+			data-position="center" data-vertical="15%" data-show-delay="1000" data-hide-delay="200" data-show-transition="left" data-hide-transition="down">
+				Lorem ipsum dolor sit amet, consectetur adipisicing.
+			</p>
+
+		</div> -->
+		<!-- Slides End -->
+
+	</div>
+</section>
+
+<!-- introduce -->
+<section id="introduce">
+	<div class="container">
+		<div class="row">
+
+			<!-- Section Header -->
+			<div class="col-md-12 col-sm-12 col-xs-12 clean-section-header wow fadeInDown">
+				<br /><br /><br />
+				<h1><span class="clean-color-contras">GET THE FULL STORY FROM EXITING EMPLOYEES</span></h1>
+				<div class="clean-line"></div>
+				<p class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">Most managers believe employees leave because of 'pull' factors such as better pay or career opportunities, rather than 'push' factors that occur long before employees look for greener pastures. Many exit programs don't focus on what happened when the employee first set their mind on leaving. Workforce Retention specialises in getting meaningful information through the exit process, and reports this back to business leaders so action can be taken</p>
+			</div>
+			<!-- Section Header End -->
+		</div>
+	</div>
+</section>
+<!-- online -->
+	<section class="clean-custom-sec clean-section-wrapper background-two" id="online">
+		<div class="container">
+			<div class="row">
+			<!-- Section Header -->
+			<div class="col-md-12 col-sm-12 col-xs-12 clean-section-header wow fadeInDown">
+				<h1><span class="clean-color-contras">Online Exit Interviews</span></h1>
+				<div class="clean-line"></div>
+				<p class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">Save time and money by outsourcing your exit interviews.   Workforce Retention's model for collecting and reporting online data is based on extensive research focussed on illiciting true sentiment from exiting employees. Too often the power of data captured through exit interviews is not realised. Workforce Retention offers a cost effective exit interview program that provides powerful insight into why your key talent is leaving. Workforce Retention's model will save HR time, reduce overheads</p>
+			</div>
+			<!-- Section Header End -->
+
+			<div class="col-md-6 col-sm-6 col-xs-12 clean-custom-sec-img wow bounceInLeft">
+				<img src="images/online.jpg" alt="Custom Image">
+			</div>
+
+			<div class="col-md-6 col-sm-6 col-xs-12 clean-custom-sec-text wow bounceInRight">
+				<h3>Online Exit Interviews</h3>
+				<p>
+					Online exit interviews can offer powerful insight into why your employees are leaving. Effective exit interview programs are often difficult for organisations to run in-house because the exit information is not collected consistently and reported objectively. The exiting employee is also less likely to tell the truth about why they are leaving unless the interview is confidential. Outsourcing your exit interview program to Workforce Retention not only saves time and cost but the on-line exit reporting provides powerful information on employee sentiment not just on what went wrong, but also what went right!
+					
+					Benefits of Outsourcing to Workforce Retention
+					
+					Exiting staff divulge relevant information with our tools. The information is candid and data more valid.
+					Participation rates are high compared with other exit programs.
+					The interview structure and reporting tool provides insight on the top reasons for leaving quickly and effectively.  
+					All interview data is captured centrally and analysed objectively. The web tool enables managers to gain insight straight from their desktop 24/7. 
+					The tool enables you to choose whether the process is confidential or non-confidential.  Non-confidential means the individual’s exit interview can be viewed by the manager.
+					Participants are very happy with Workforce Retentions process and have a willingness to provide candid feedback about their experience. 
+					How Is It Done?
+					
+					We go through an exit interview customisation process with you to ensure the data captured is completely relevant to your organisaiton.
+					The exiting employee receives an email and link to their own online interview. Whilst they answer questions and input information the data is captured and indexed in the web hosted database.
+					You and other appointed management can logon to your website account at any stage in the program and view reported results from the quantitative interview responses.
+					A comprehensive quarterly exit report is also available in your account with drill down analysis on hot spots in the organisation and highlighting the themes and trends from quantitative and qualitative analysis. This quarterly exit report is posted to your web site account and also presented in person to the HR/ Management team.
+					What is the cost?
+					
+					Prices start from $3,000 AUD per annum for self administer. A comprehensive list of pricing is available on request. For more information contact Angeline Wilkes</p>
+
+			</div>
+		</div>
+	</div>
+	</section>
+<!-- phone -->
+	<section id="phone" class="clean-section-wrapper">
+	<!-- Container -->
+	<div class="container">
+		<div class="row">
+
+			<!-- Section Header -->
+			<div class="col-md-12 col-sm-12 col-xs-12 clean-section-header wow fadeInDown">
+				<h1><span class="clean-color-contras">Phone Exit Interviews</span></h1>
+				<div class="clean-line"></div>
+				<p class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">Outsource your exit interviews with Workforce Retention's cost effective third party exit interview programs. Using specialised staff to sensitively collect information from exiting employees via a telephone exit interview, Workforce Retention successfully uncovers the root cause of employee turnover and allows you to view powerful online reports on such things as; the top five reasons for leaving, demographic profiles of former employees and insightful drill downs into reasons for exiting.</p>
+			</div>
+			<!-- Section Header End -->
+			<div class="col-md-6 col-sm-6 col-xs-12 clean-custom-sec-img wow bounceInLeft">
+				<img src="images/phone1.jpg" alt="Custom Image">
+				<img src="images/phone2.jpg" alt="Custom Image">
+			</div>
+
+			<div class="col-md-6 col-sm-6 col-xs-12 clean-custom-sec-text wow bounceInRight">
+				<h3>Phone Exit Interviews</h3>
+				<p>Workforce Retention's Exit Interview Program has specialised staff sensitively collect information from exiting employees via a phone exit interview. Participating organisations can view automated exit reports through a web-hosted database at any stage in the program. At the culimiation of the program cycle (three months) a comprehsive exit report is accessed by managment providing them with insightful information about the root causes of employee turnover, where employee turnover is manifesting and why.
+
+					Cost of Employee Turnover
+					
+					Well-documented costs associated with losing good employees range from 1–2.5 times their salary. (Australian Institute of Management, Saratoga Institute)
+					A reduction of 5%, for a medium-sized company experiencing unhealthy turnover, could save approximately $5,000,000 p.a.  (based on: company size: 2000 employees; turnover rate of 22%; costing 1xaverage salary $50,000)
+					Hidden consequences include losses in productivity, intellectual capital, training dollars, lost business and reduced morale.
+					How Is It Done
+					
+					We review the interview structure with you and agree on any necessary adjustments so that the data captured will be relevant to your organisation.
+					We work with your HR staff to obtain names and contact information on your exiting or former employees.
+					We conduct an comprehensive probing interview with each former employee, maintain quantitative data and qualitative information in our web-hosted database.
+					Management can logon to their website client account at any stage in the program and view reported results from the quantitative interview responses.
+					The data is compiled and comprehensively analysed to uncover specific patterns and trends. A drill-down analysis is also provided for deeper insight into where turnover is manifesting and why.
+					A quarterly exit report is posted to the web-site and accessed via a secure logon and presented to the HR/ Management team.
+					Limitations with Internal Exit Interview Programs:
+					
+					HR are often more focused on other initiatives and running exit interviews is not seen as a core part of their role. Internal exit interview programs are notoriously unreliable, particularly when conducted by someone who may later be asked to provide a reference. When the internal exit interview programs develop a reputation for not creating positive change the departing employee does not engage in the process, believing  their information will be filed and forgotten. These factors translate to wasted time, energy and money. They do actual damage to the employer brand.
+					
+					Why Outsource?
+					
+					Advantages of outsourcing your exit interview program include:
+					
+					A third party provides an impartial process so that exiting staff are more willing to divulge relevant information.
+					No fear of retribution
+					The environment is non-threatening
+					A dedicated resource manages the entire process. Information is collected centrally and analysed objectively so the organisation can make meaningful impact.
+					The participant is assured of complete anonymity as their information will contribute towards an overall assessment for the organisation. This encourages even greater candour.
+					The psychology in leaving the participant with a sense of having contributed to something worthwhile adds to a continued rapport and positive image of the company.</p>
+
+			</div>
+
+		</div>
+	</div>
+	<!-- Container End -->
+
+	</section>
+<!-- internal -->
+<section id="internal" class="clean-section-wrapper clean-offer-section  background-two">
+	<div class="container">
+		<div class="row">
+
+			<!-- Section Header -->
+			<div class="col-md-12 col-sm-12 col-xs-12 clean-section-header wow fadeInDown">
+				<h1><span class="clean-color-contras">Internal Exit Interviews</span></h1>
+				<div class="clean-line"></div>
+				<p class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">You can have the flexibility of allowing internal staff such as HR or management conduct internal exit interviews for your organisation with the reassurance of knowing the exit data is being captured centrally and reported objectively for the entire organisation.</p>
+			</div>
+			<!-- Section Header End -->
+
+			<!-- Services -->
+			<div class="clean-service-wrapper">
+				<div class="col-md-4 col-sm-4 col-xs-12 wow bounceInLeft">
+
+					<div class="clean-blurb-icon-only">
+						<i class="fa fa-html5"></i>
+						<h3>Model of Disengagement to Exit</h3>
+						<img src="images/internal.jpg" alt="internal">
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s">
+
+						<div class="clean-blurb-icon-only">
+								<i class="fa fa-css3"></i>
+								<h3>Flexible Exit Interview Options</h3>
+								<img src="images/internal2.jpg" alt="internal1">
+							</div>
+		
+							
+
+				</div>
+
+				<div class="col-md-4 col-sm-4 col-xs-12 wow bounceInRight">
+
+						<div class="clean-blurb-icon-only">
+								<i class="fa fa-jsfiddle"></i>
+								<h3>How Is It Done</h3>
+								<p>We go through an exit interview customisation process with you to ensure the data captured is completely relevant to your organisaiton.
+										We give you the option to administer the entire program or have us adminster part of it for you (i.e have us prompt you when a new exit interview is ready to be conducted for an exiting employee).
+										You conduct comprehensive probing interviews using the interview structure as a guide and capture the information in the database.
+										You and other appointed management can logon to your website account at any stage in the program and view reported results from the quantitative interview responses.
+										You have the option to have us complete a comprehensive quarterly exit report for you which contains drill down analysis on hot spots in the organisation and analysis of the qualitative comments from exiting employees. This quarterly exit report is posted to the web site and also presented in person to the HR/ Management team.</p>
+							</div>
+
+				</div>
+				<!-- Services End -->
+
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--contact-->
+<section id="contact" class="clean-section-wrapper clean-contact-section background-one" data-stellar-background-ratio="0.5">
+<div class="clean-parallax-overlay"></div>
+	<div class="container">
+		<div class="row">
+
+			<!-- Section Header -->
+			<div class="col-md-12 col-sm-12 col-xs-12 clean-section-header wow fadeInDown clean-section-header-parallax">
+				<h1><span class="clean-color-contras">CONTACT US</span></h1>
+				<div class="clean-line"></div>
+				<p class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">For more information about our products and services please email us at: enquiries@workforceretention.com.au or call Angeline Wilkes direct on 02 8413-0170</p>
+			</div>
+			<!-- Section Header End -->
+
+			<div class="clean-contact-details">
+
+				<!-- Contact Form -->
+				<div class="col-md-12 col-sm-12 col-xs-12 clean-contact-form wow bounceInRight" >
+					<div id="contact-result"></div>
+					<div id="contact-form">
+						<div class="clean-input-name clean-input-fields">
+							<label for="name">Name*</label>
+							<input type="text" name="name" id="name" required>
+						</div>
+
+						<div class="clean-input-email clean-input-fields">
+							<label for="email">Email*</label>
+							<input type="email" name="email" id="email" required>
+						</div>
+					<div ng-controller="noteCtrl">
+						<div class="clean-input-message clean-input-fields" >
+							<label for="message">Message</label>
+							<textarea ng-model="message" name="message" id="message" cols="30" rows="10"></textarea>
+							
+							<p>
+								The remaining words：
+								<span ng-bind="left()"></span>
+							</p>
+						</div>
+						<input type="submit" value="SEND MESSAGE" id="submit-btn" ng-click="save()">
+					</div>
+					</div>
+				</div>
+				<!-- Contact Form End -->
+
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer class="background-two">
+	<div class="container">
+		<div class="row">
+			<div class="clean-footer-content">
+
+				<div class="clean-footer-logo wow bounceIn" data-wow-offset="0">
+					<a href="index.html">
+						<img id="logo-footer" src="images/logo.png" alt="clean">
+					</a>
+				</div>
+
+				<p class="clean-copyright-info">Copyright &copy 2006 Workforce Retention - All Rights Reserved - Privacy Policy
+						Website by Kephra Design;</p>
+
+				<ul class="clean-footer-social-info">
+					<li>
+						<a href=""><i class="fa fa-facebook"></i></a>
+					</li>
+					<li>
+						<a href=""><i class="fa fa-twitter"></i></a>
+					</li>
+					<li>
+						<a href=""><i class="fa fa-google-plus"></i></a>
+					</li>
+					<li>
+						<a href=""><i class="fa fa-linkedin"></i></a>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!-- ===================================
+	SCRIPTS
+==================================== -->
+<script>
+	var app = angular.module("myapp",[]);
+	app.controller("TitleController", function($scope) {
+		$scope.helloTo = {};
+		$scope.helloTo.title1 = "Home";
+		$scope.helloTo.title2 = "Products & Services Page";
+		$scope.helloTo.title3 = "Online Exit Interviews";
+		$scope.helloTo.title4 = "Phone Exit Interviews";
+		$scope.helloTo.title5 = "Internal Exit Interviews";
+		$scope.helloTo.title6 = "Contact us";
+	});
+	app.controller("noteCtrl",function($scope){
+		$scope.message = "";
+		$scope.left = function(){
+			return 100 - $scope.message.length;
+		};
+		$scope.save = function(){
+			alert("send successful!");
+		}
+	});
+</script>
+<script src="js/modernizr.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.js"></script>
+<script src="js/jquery.scrollUp.min.js"></script>
+<script src="js/smooth-scroll.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/jquery.sliderPro.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.easypiechart.js"></script>
+<script src="js/jquery.countTo.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.nav.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>
